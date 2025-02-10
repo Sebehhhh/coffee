@@ -8,11 +8,11 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item {{ request()->is('/') ? 'active' : '' }}"><a href="{{ url('/') }}" class="nav-link">Beranda</a></li>
-                <li class="nav-item {{ request()->is('menu') ? 'active' : '' }}"><a href="{{ url('/menu') }}" class="nav-link">Menu</a></li>
-                <li class="nav-item {{ request()->is('services') ? 'active' : '' }}"><a href="{{ url('/services') }}" class="nav-link">Layanan</a></li>
-                <li class="nav-item {{ request()->is('blog') ? 'active' : '' }}"><a href="{{ url('/blog') }}" class="nav-link">Info KAWAnan</a></li>
-                <li class="nav-item {{ request()->is('about') ? 'active' : '' }}"><a href="{{ url('/about') }}" class="nav-link">Tentang Kami</a></li>
-                <li class="nav-item {{ request()->is('contact') ? 'active' : '' }}"><a href="{{ url('/contact') }}" class="nav-link">Kontak Kami</a></li>
+                <li class="nav-item {{ request()->is('p_menu') ? 'active' : '' }}"><a href="{{ url('/p_menu') }}" class="nav-link">Menu</a></li>
+                <li class="nav-item {{ request()->is('p_services') ? 'active' : '' }}"><a href="{{ url('/p_services') }}" class="nav-link">Layanan</a></li>
+                <li class="nav-item {{ request()->is('p_blog') ? 'active' : '' }}"><a href="{{ url('/p_blog') }}" class="nav-link">Info KAWAnan</a></li>
+                <li class="nav-item {{ request()->is('p_about') ? 'active' : '' }}"><a href="{{ url('/p_about') }}" class="nav-link">Tentang Kami</a></li>
+                <li class="nav-item {{ request()->is('p_contact') ? 'active' : '' }}"><a href="{{ url('/p_contact') }}" class="nav-link">Kontak Kami</a></li>
             </ul>
         </div>
     </div>

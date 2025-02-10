@@ -16,31 +16,38 @@
             <li class="sidebar-title">Menu</li>
 
             <li class="sidebar-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
-                <a href="{{ route('dashboard') }}" class='sidebar-link'>
-                <i class="bi bi-grid-fill"></i>
-                <span>Dashboard</span>
-                </a>
+            <a href="{{ route('dashboard') }}" class='sidebar-link'>
+            <i class="bi bi-grid-fill"></i>
+            <span>Dashboard</span>
+            </a>
             </li>
 
             <li class="sidebar-item {{ request()->routeIs('banner.index') ? 'active' : '' }}">
-                <a href="{{ route('banner.index') }}" class='sidebar-link'>
-                <i class="bi bi-image"></i>
-                <span>Banner</span>
-                </a>
+            <a href="{{ route('banner.index') }}" class='sidebar-link'>
+            <i class="bi bi-image"></i>
+            <span>Banner</span>
+            </a>
             </li>
 
             <li class="sidebar-item {{ request()->routeIs('category.index') ? 'active' : '' }}">
-                <a href="{{ route('category.index') }}" class='sidebar-link'>
-                <i class="bi bi-tag"></i>
-                <span>Kategori</span>
-                </a>
+            <a href="{{ route('category.index') }}" class='sidebar-link'>
+            <i class="bi bi-tag"></i>
+            <span>Kategori</span>
+            </a>
             </li>
 
             <li class="sidebar-item {{ request()->routeIs('story.index') ? 'active' : '' }}">
-                <a href="{{ route('story.index') }}" class='sidebar-link'>
-                <i class="bi bi-book"></i>
-                <span>Cerita</span>
-                </a>
+            <a href="{{ route('story.index') }}" class='sidebar-link'>
+            <i class="bi bi-book"></i>
+            <span>Cerita</span>
+            </a>
+            </li>
+
+            <li class="sidebar-item {{ request()->routeIs('menu.index') ? 'active' : '' }}">
+            <a href="{{ route('menu.index') }}" class='sidebar-link'>
+            <i class="bi bi-menu-button-wide"></i>
+            <span>Menu</span>
+            </a>
             </li>
             </ul>
         </div>
