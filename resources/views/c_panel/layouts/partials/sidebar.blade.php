@@ -56,6 +56,17 @@
             <span>Blog</span>
             </a>
             </li>
+
+            <li class="sidebar-item">
+            <a href="{{ route('logout') }}" class='sidebar-link' 
+               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Logout</span>
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+            </li>
             </ul>
         </div>
         <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>

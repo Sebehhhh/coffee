@@ -21,6 +21,7 @@ Route::post('/login', [AuthController::class, 'loginAction'])->name('loginAction
 
 
 Route::middleware(['auth'])->group(function () {
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::resource('banner', BannerController::class);
     Route::resource('story', StoryController::class);
     Route::resource('menu', MenuController::class); 
