@@ -19,7 +19,7 @@
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">Jl.KH.Akhmad Nawawi No.38, RT.01/RW.01, Karang Taruna, Kec. Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan 70812</span></li>
-                            <li><a href="wa.me/6285751631088"><span class="icon icon-phone"></span><span class="text">+62 858 2092 9322</span></a></li>
+                            <li><a href="https://wa.me/6285820929322"><span class="icon icon-phone"></span><span class="text">+62 858 2092 9322</span></a></li>
                             <li><a href="https://www.instagram.com/kawangopi/" target="_blank"><span class="icon icon-instagram"></span><span class="text">@kawangopi.id</span></a></li>
                         </ul>
                     </div>

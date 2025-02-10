@@ -5,7 +5,7 @@
     <section class="home-slider owl-carousel">
         @foreach ($banners as $banner)
             <div class="slider-item" style="background-image: url({{ Storage::url($banner->gambar) }});">
-                <div class="overlay"></div>
+                <div class="overlay" style="background: rgba(0, 0, 0, 1);"></div>
                 <div class="container">
                     <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
@@ -13,8 +13,7 @@
                             <span class="subheading">Selamat Datang</span>
                             <h1 class="mb-4">{{ $banner->judul }}</h1>
                             <p class="mb-4 mb-md-5">{{ $banner->sub_judul }}</p>
-                            <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#"
-                                    class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View
+                            <p><a href="{{ url('p_menu') }}" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">
                                     Menu</a></p>
                         </div>
 
@@ -66,12 +65,14 @@
                     <div class="heading-section text-md-right ftco-animate">
                         <span class="subheading">Temukan</span>
                         <h2 class="mb-4">Menu Kami</h2>
-                        <p class="mb-4">Lebih dari sekedar kopi, kami menyajikan berbagai pilihan menu untuk memenuhi 
-                            selera Anda. Dari kopi premium hingga makanan ringan, menu utama, dan hidangan penutup yang menggoda.
+                        <p class="mb-4">Lebih dari sekedar kopi, kami menyajikan berbagai pilihan menu untuk memenuhi
+                            selera Anda. Dari kopi premium hingga makanan ringan, menu utama, dan hidangan penutup yang
+                            menggoda.
                             Setiap hidangan dibuat dengan bahan berkualitas dan racikan khusus dari chef kami.
                             Nikmati suasana nyaman sambil menikmati hidangan favorit Anda di KawaNgopi.
                         </p>
-                        <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">Lihat Menu Lengkap</a>
+                        <p><a href="{{ url('p_menu') }}" class="btn btn-primary btn-outline-primary px-4 py-3">Lihat Menu
+                                Lengkap</a>
                         </p>
                     </div>
                 </div>
@@ -97,7 +98,8 @@
                 <div class="col-md-7 heading-section ftco-animate text-center">
                     <span class="subheading">Discover</span>
                     <h2 class="mb-4">Best Sellers</h2>
-                    <p>Berikut adalah pilihan menu terbaik kami dari berbagai kategori, mulai dari kopi, makanan, minuman segar hingga dessert yang paling digemari oleh pelanggan kami.</p>
+                    <p>Berikut adalah pilihan menu terbaik kami dari berbagai kategori, mulai dari kopi, makanan, minuman
+                        segar hingga dessert yang paling digemari oleh pelanggan kami.</p>
                 </div>
             </div>
             <div class="row">
@@ -121,38 +123,16 @@
     <section class="ftco-gallery">
         <div class="container-wrap">
             <div class="row no-gutters">
-                <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
-                        style="background-image: url(images/gallery-1.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
-                        style="background-image: url(images/gallery-2.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
-                        style="background-image: url(images/gallery-3.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
-                        style="background-image: url(images/gallery-4.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-search"></span>
-                        </div>
-                    </a>
-                </div>
+                @foreach ($galleries as $gallery)
+                    <div class="col-md-3 ftco-animate">
+                        <a href="{{url('p_gallery') }}" class="gallery img d-flex align-items-center"
+                            style="background-image: url({{ Storage::url($gallery->gambar) }});">
+                            <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-search"></span>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -161,60 +141,28 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h2 class="mb-4">Recent from blog</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
+                    <h2 class="mb-4">Blog Terbaru</h2>
+                    <p>Temukan berbagai artikel menarik tentang kopi, kuliner, dan gaya hidup yang kami hadirkan khusus untuk Anda dalam blog terbaru kami.</p>
                 </div>
             </div>
             <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry align-self-stretch">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text py-4 d-block">
-                            <div class="meta">
-                                <div><a href="#">Sept 10, 2018</a></div>
-                                <div><a href="#">Admin</a></div>
-                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                @foreach ($blogs as $blog)
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry align-self-stretch">
+                            <a href="{{ url('p_blog_page', $blog->id) }}" class="block-20"
+                                style="background-image: url('{{ asset('storage/' . $blog->gambar) }}');">
+                            </a>
+                            <div class="text py-4 d-block">
+                                <div class="meta">
+                                    <div><a href="#">{{ $blog->created_at->format('d-m-Y') }}</a></div>
+                                    <div><a href="#">{{ $blog->user->name }}</a></div>
+                                </div>
+                                <h3 class="heading mt-2"><a href="#">{{ $blog->judul }}</a></h3>
+                                <p>{{ Str::limit($blog->deskripsi, 50) }}</p>
                             </div>
-                            <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry align-self-stretch">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text py-4 d-block">
-                            <div class="meta">
-                                <div><a href="#">Sept 10, 2018</a></div>
-                                <div><a href="#">Admin</a></div>
-                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                            </div>
-                            <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry align-self-stretch">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text py-4 d-block">
-                            <div class="meta">
-                                <div><a href="#">Sept 10, 2018</a></div>
-                                <div><a href="#">Admin</a></div>
-                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                            </div>
-                            <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

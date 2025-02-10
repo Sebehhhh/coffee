@@ -10,8 +10,8 @@
                     <div class="col-md-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">Blog Details</h1>
                         <p class="breadcrumbs">
-                            <span class="mr-2"><a href="{{ url('/') }}">Home</a></span>
-                            <span class="mr-2"><a href="{{ url('blog') }}">Blog</a></span>
+                            <span class="mr-2"><a href="{{ url('/') }}">Beranda</a></span>
+                            <span class="mr-2"><a href="{{ url('p_blog') }}">Blog</a></span>
                             <span>{{ $blog->title }}</span>
                         </p>
                     </div>
