@@ -37,23 +37,14 @@ class LandingpageController extends Controller
         return view('landingpage.menu', compact('menus', 'categories'));
     }
 
-    public function service()
-    {
-        return view('landingpage.service');
-    }
-
     public function about()
     {
-        return view('landingpage.about');
+        $story = Story::first();
+        return view('landingpage.about', compact('story'));
     }
 
     public function blog()
     {
         return view('landingpage.blog');
-    }
-
-    public function contact()
-    {
-        return view('landingpage.contact');
     }
 }

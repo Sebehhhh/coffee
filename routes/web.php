@@ -11,10 +11,8 @@ use App\Http\Controllers\MenuController;
 
 Route::get('/', [LandingpageController::class, 'index']);
 Route::get('/p_menu', [LandingpageController::class, 'menu']);
-Route::get('/p_services', [LandingpageController::class, 'service']);
 Route::get('/p_blog', [LandingpageController::class, 'blog']);
 Route::get('/p_about', [LandingpageController::class, 'about']);
-Route::get('/p_contact', [LandingpageController::class, 'contact']);
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'loginAction'])->name('loginAction');

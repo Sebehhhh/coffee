@@ -59,61 +59,6 @@
         </div>
     </section>
 
-    <section class="ftco-about d-md-flex">
-        <div class="one-half img" style="background-image: url({{ Storage::url($story->gambar) }});"></div>
-        <div class="one-half ftco-animate">
-            <div class="overlap">
-                <div class="heading-section ftco-animate ">
-                    <span class="subheading">Temukan</span>
-                    <h2 class="mb-4">Cerita Kami</h2>
-                </div>
-                <div>
-                    <p>{{ $story->cerita }}</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section ftco-services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 ftco-animate">
-                    <div class="media d-block text-center block-6 services">
-                        <div class="icon d-flex justify-content-center align-items-center mb-5">
-                            <span class="icon-check"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading">Pemesanan Mudah dan Cepat</h3>
-                            <p>Proses pemesanan yang mudah dan cepat untuk kenyamanan Anda.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="media d-block text-center block-6 services">
-                        <div class="icon d-flex justify-content-center align-items-center mb-5">
-                            <span class="icon-restaurant_menu"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading">Snack dan Makanan Lain</h3>
-                            <p>Kami juga menyediakan berbagai snack dan makanan lain selain kopi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="media d-block text-center block-6 services">
-                        <div class="icon d-flex justify-content-center align-items-center mb-5">
-                            <span class="icon-home"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading">Tempat Luas dan Nyaman</h3>
-                            <p>Nikmati suasana yang luas dan nyaman di kedai kami.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="ftco-section">
         <div class="container">
             <div class="row align-items-center">
@@ -140,55 +85,6 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/bg_2.jpg);"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center">
-                                <div class="text">
-                                    <div class="icon"><span class="icon-coffee"></span></div>
-                                    <strong class="number" data-number="50">0</strong>
-                                    <span>Varian Kopi</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center">
-                                <div class="text">
-                                    <div class="icon"><span class="icon-restaurant_menu"></span></div>
-                                    <strong class="number" data-number="30">0</strong>
-                                    <span>Menu Makanan</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center">
-                                <div class="text">
-                                    <div class="icon"><span class="icon-glass"></span></div>
-                                    <strong class="number" data-number="20">0</strong>
-                                    <span>Minuman Segar</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center">
-                                <div class="text">
-                                    <div class="icon"><span class="icon-cake"></span></div>
-                                    <strong class="number" data-number="10">0</strong>
-                                    <span>Jenis Dessert</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -318,56 +214,6 @@
                                 regelialia.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="ftco-appointment">
-        <div class="overlay"></div>
-        <div class="container-wrap">
-            <div class="row no-gutters d-md-flex align-items-center">
-                <div class="col-md-6 d-flex align-self-stretch">
-                    <div id="map"></div>
-                </div>
-                <div class="col-md-6 appointment ftco-animate">
-                    <h3 class="mb-3">Book a Table</h3>
-                    <form action="#" class="appointment-form">
-                        <div class="d-md-flex">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="First Name">
-                            </div>
-                            <div class="form-group ml-md-4">
-                                <input type="text" class="form-control" placeholder="Last Name">
-                            </div>
-                        </div>
-                        <div class="d-md-flex">
-                            <div class="form-group">
-                                <div class="input-wrap">
-                                    <div class="icon"><span class="ion-md-calendar"></span></div>
-                                    <input type="text" class="form-control appointment_date" placeholder="Date">
-                                </div>
-                            </div>
-                            <div class="form-group ml-md-4">
-                                <div class="input-wrap">
-                                    <div class="icon"><span class="ion-ios-clock"></span></div>
-                                    <input type="text" class="form-control appointment_time" placeholder="Time">
-                                </div>
-                            </div>
-                            <div class="form-group ml-md-4">
-                                <input type="text" class="form-control" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="d-md-flex">
-                            <div class="form-group">
-                                <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group ml-md-4">
-                                <input type="submit" value="Appointment" class="btn btn-primary py-3 px-4">
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
