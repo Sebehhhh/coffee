@@ -45,6 +45,30 @@ class BannerController extends Controller
         return redirect()->route('banner.index')->with('success', 'Banner berhasil ditambahkan.');
     }
 
+    public function edit(Banner $banner)
+    {
+        return view('c_panel.banners.edit', compact('banner'));
+    }
+
+    public function update(Request $request, Banner $banner)
+    {
+        $validated = $request->validate([
+            'judul' => 'required|string|max:255',
+            'sub_judul' => 'nullable|string|max:255',
+            'gambar' => 'nullable|image|max:2048'
+        ]);
+
+        if ($request->hasFile('gambar')) {
+            if ($banner->gambar) {
+                Storage::disk('public')->delete(str_replace('storage/', 'public/', $banner->gambar));
+            }
+            $validated['gambar'] = $request->file('gambar')->store('uploads/banners', 'public');
+        }
+
+        $banner->update($validated);
+        return redirect()->route('banner.index')->with('success', 'Banner berhasil diperbarui.');
+    }
+
     public function destroy($id)
     {
         // Find the banner by ID
