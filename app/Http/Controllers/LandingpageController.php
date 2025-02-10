@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Story;
 use Illuminate\Http\Request;
 
 class LandingpageController extends Controller
@@ -10,7 +11,8 @@ class LandingpageController extends Controller
     public function index()
     {
         $banners = Banner::all();
-        return view('landingpage.home', compact('banners'));
+        $story = Story::first();
+        return view('landingpage.home', compact('banners', 'story'));
     }
 
     public function menu()

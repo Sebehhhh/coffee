@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingpageController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BannerController;
-use App\Http\Controllers\StoryController; 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\StoryController;
+use App\Http\Controllers\MenuController; 
 
 Route::get('/', [LandingpageController::class, 'index']);
 Route::get('/menu', [LandingpageController::class, 'menu']);
@@ -20,6 +22,8 @@ Route::post('/login', [AuthController::class, 'loginAction'])->name('loginAction
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('banner', BannerController::class);
-    Route::resource('story', StoryController::class); 
+    Route::resource('story', StoryController::class);
+    Route::resource('menu', MenuController::class); 
+    Route::resource('category', CategoryController::class); 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });

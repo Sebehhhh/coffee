@@ -60,7 +60,7 @@
     </section>
 
     <section class="ftco-about d-md-flex">
-        <div class="one-half img" style="background-image: url(images/about.jpg);"></div>
+        <div class="one-half img" style="background-image: url({{ Storage::url($story->gambar) }});"></div>
         <div class="one-half ftco-animate">
             <div class="overlap">
                 <div class="heading-section ftco-animate ">
@@ -68,13 +68,7 @@
                     <h2 class="mb-4">Cerita Kami</h2>
                 </div>
                 <div>
-                    <p>KawaNgopi adalah sebuah kedai kopi yang berlokasi di Jl. KH. Akhmad Nawawi No.38 RT.01 (Karang Jawa),
-                        Pelaihari, Kalimantan Selatan. Kami berkomitmen untuk menyediakan pengalaman ngopi yang nyaman dan
-                        menyenangkan bagi semua pelanggan. Dengan jam operasional yang fleksibel, kami buka dari Senin
-                        hingga Minggu pukul 09.00 hingga 23.00 WITA, dan khusus hari Jumat mulai pukul 16.00 hingga 23.00
-                        WITA. Di KawaNgopi, kami percaya bahwa setiap cangkir kopi memiliki cerita, dan kami ingin menjadi
-                        bagian dari cerita Anda. Mari bergabung dengan kami untuk menikmati secangkir kopi yang nikmat dan
-                        suasana yang hangat.</p>
+                    <p>{{ $story->cerita }}</p>
                 </div>
             </div>
         </div>
