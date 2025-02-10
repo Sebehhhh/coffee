@@ -49,6 +49,13 @@
             <span>Menu</span>
             </a>
             </li>
+
+            <li class="sidebar-item {{ request()->routeIs('blog.index') ? 'active' : '' }}">
+            <a href="{{ route('blog.index') }}" class='sidebar-link'>
+            <i class="bi bi-newspaper"></i>
+            <span>Blog</span>
+            </a>
+            </li>
             </ul>
         </div>
         <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>

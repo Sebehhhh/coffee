@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Blog;
 use App\Models\Category;
 use App\Models\Menu;
 use App\Models\Story;
@@ -45,6 +46,13 @@ class LandingpageController extends Controller
 
     public function blog()
     {
-        return view('landingpage.blog');
+        $blogs = Blog::paginate(6);
+        return view('landingpage.blog', compact('blogs'));
+    }
+
+    public function blogPage($id)
+    {
+        $blog = Blog::find($id);
+        return view('landingpage.blog_page', compact('blog'));
     }
 }
