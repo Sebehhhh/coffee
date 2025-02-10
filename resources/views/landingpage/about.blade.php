@@ -19,33 +19,32 @@
             </div>
         </div>
     </section>
-    <section class="ftco-intro">
+   
+    <section class="ftco-intro text-center">
         <div class="container-wrap">
-            <div class="wrap d-md-flex align-items-xl-end">
+            <div class="wrap d-md-flex align-items-xl-end justify-content-center">
                 <div class="info w-100">
-                    <div class="row no-gutters">
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="icon"><span class="icon-coffee"></span></div>
+                    <div class="row no-gutters mb-4">
+                        <div class="col-md-4 d-flex ftco-animate justify-content-center">
+
                             <div class="text">
-                                <h3>Kopi Segar</h3>
-                                <p>Rasakan aroma dan rasa kaya dari kopi segar kami, dibuat dari biji terbaik.</p>
+                                <h3>Setiap Hari</h3>
+                                <p>10:00 - 22:00 WITA</p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="icon"><span class="icon-my_location"></span></div>
+                        <div class="col-md-4 d-flex ftco-animate justify-content-center">
+
                             <div class="text">
-                                <h3>Indonesia</h3>
+                                <h3>Alamat</h3>
                                 <p>Jl.KH.Akhmad Nawawi No.38, RT.01/RW.01, Karang Taruna, Kec. Pelaihari, Kabupaten Tanah
                                     Laut, Kalimantan Selatan 70812</p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="icon"><span class="icon-clock-o"></span></div>
+                        <div class="col-md-4 d-flex ftco-animate justify-content-center">
+
                             <div class="text">
-                                <h3>Sabtu-Kamis</h3>
-                                <p>9:00am - 11:00pm</p>
-                                <h3>Jumat</h3>
-                                <p>4:00pm - 11:00pm</p>
+                                <h3>Jum'at</h3>
+                                <p>16:00 - 22:00 WITA</p>
                             </div>
                         </div>
                     </div>
@@ -53,6 +52,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="ftco-about d-md-flex">
         <div class="one-half img" style="background-image: url({{ Storage::url($story->gambar) }});"></div>
@@ -80,24 +80,48 @@
                         <div class="col-md-4">
                             <div class="menu-entry">
                                 <div class="text text-center pt-3">
-                                    <h3>Pemesanan Mudah dan Cepat</h3>
-                                    <p>Proses pemesanan yang mudah dan cepat untuk kenyamanan Anda.</p>
+                                    <h3>Reservasi Meja</h3>
+                                    <p>Pastikan tempat terbaik untukmu dan teman-teman dengan reservasi mudah. Pilih indoor dengan AC atau outdoor dengan udara segar sesuai kenyamananmu!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="menu-entry">
                                 <div class="text text-center pt-3">
-                                    <h3>Snack dan Makanan Lain</h3>
-                                    <p>Kami juga menyediakan berbagai snack dan makanan lain selain kopi.</p>
+                                    <h3>WiFi Gratis</h3>
+                                    <p>Internet cepat dan stabil untuk menemani waktumu di kafe. Cocok untuk kerja, belajar, atau sekadar menikmati konten favorit tanpa hambatan.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="menu-entry">
                                 <div class="text text-center pt-3">
-                                    <h3>Tempat Luas dan Nyaman</h3>
-                                    <p>Nikmati suasana yang luas dan nyaman di kedai kami.</p>
+                                    <h3>Charging Station</h3>
+                                    <p>Gadget lowbat? Jangan khawatir! Nikmati charging station gratis agar baterai tetap penuh sepanjang hari.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="menu-entry">
+                                <div class="text text-center pt-3">
+                                    <h3>Birthday Package</h3>
+                                    <p>Buat momen ulang tahun lebih berkesan dengan dekorasi, menu spesial, dan suasana cozy. Indoor atau outdoor? Semua bisa!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="menu-entry">
+                                <div class="text text-center pt-3">
+                                    <h3>Cashless Payment</h3>
+                                    <p>Kami mendukung pembayaran digital untuk pengalaman yang lebih cepat dan aman. Terima GoPay, OVO, ShopeePay, serta kartu debit/kredit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="menu-entry">
+                                <div class="text text-center pt-3">
+                                    <h3>Indoor & Outdoor Area</h3>
+                                    <p>Pilih suasana sesuai mood-mu! Indoor dengan AC untuk kenyamanan maksimal atau outdoor dengan udara segar untuk suasana lebih santai.</p>
                                 </div>
                             </div>
                         </div>

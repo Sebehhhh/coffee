@@ -44,7 +44,8 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+            <p>© <script>document.write(new Date().getFullYear());</script> KawaNgopi | Creating Perfect Moments, One Cup at a Time
+            <br>All rights reserved • Pelaihari, Kalimantan Selatan</p>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@
                     <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
                         <div class="col-md-8 col-sm-12 text-center ftco-animate">
-                            <span class="subheading">Selamat Datang</span>
+                            <span class="subheading text-light">Selamat Datang</span>
                             <h1 class="mb-4">{{ $banner->judul }}</h1>
                             <p class="mb-4 mb-md-5">{{ $banner->sub_judul }}</p>
                             <p><a href="{{ url('p_menu') }}" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">
@@ -23,33 +23,31 @@
         @endforeach
     </section>
 
-    <section class="ftco-intro">
+    <section class="ftco-intro text-center">
         <div class="container-wrap">
-            <div class="wrap d-md-flex align-items-xl-end">
+            <div class="wrap d-md-flex align-items-xl-end justify-content-center">
                 <div class="info w-100">
-                    <div class="row no-gutters">
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="icon"><span class="icon-coffee"></span></div>
+                    <div class="row no-gutters mb-4">
+                        <div class="col-md-4 d-flex ftco-animate justify-content-center">
+
                             <div class="text">
-                                <h3>Kopi Segar</h3>
-                                <p>Rasakan aroma dan rasa kaya dari kopi segar kami, dibuat dari biji terbaik.</p>
+                                <h3>Setiap Hari</h3>
+                                <p>10:00 - 22:00 WITA</p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="icon"><span class="icon-my_location"></span></div>
+                        <div class="col-md-4 d-flex ftco-animate justify-content-center">
+
                             <div class="text">
-                                <h3>Indonesia</h3>
+                                <h3>Alamat</h3>
                                 <p>Jl.KH.Akhmad Nawawi No.38, RT.01/RW.01, Karang Taruna, Kec. Pelaihari, Kabupaten Tanah
                                     Laut, Kalimantan Selatan 70812</p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="icon"><span class="icon-clock-o"></span></div>
+                        <div class="col-md-4 d-flex ftco-animate justify-content-center">
+
                             <div class="text">
-                                <h3>Sabtu-Kamis</h3>
-                                <p>9:00am - 11:00pm</p>
-                                <h3>Jumat</h3>
-                                <p>4:00pm - 11:00pm</p>
+                                <h3>Jum'at</h3>
+                                <p>16:00 - 22:00 WITA</p>
                             </div>
                         </div>
                     </div>
@@ -57,6 +55,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="ftco-section">
         <div class="container">
@@ -92,6 +91,8 @@
         </div>
     </section>
 
+
+
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
@@ -125,7 +126,7 @@
             <div class="row no-gutters">
                 @foreach ($galleries as $gallery)
                     <div class="col-md-3 ftco-animate">
-                        <a href="{{url('p_gallery') }}" class="gallery img d-flex align-items-center"
+                        <a href="{{ url('p_gallery') }}" class="gallery img d-flex align-items-center"
                             style="background-image: url({{ Storage::url($gallery->gambar) }});">
                             <div class="icon mb-4 d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
@@ -142,7 +143,8 @@
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
                     <h2 class="mb-4">Blog Terbaru</h2>
-                    <p>Temukan berbagai artikel menarik tentang kopi, kuliner, dan gaya hidup yang kami hadirkan khusus untuk Anda dalam blog terbaru kami.</p>
+                    <p>Temukan berbagai artikel menarik tentang kopi, kuliner, dan gaya hidup yang kami hadirkan khusus
+                        untuk Anda dalam blog terbaru kami.</p>
                 </div>
             </div>
             <div class="row d-flex">
